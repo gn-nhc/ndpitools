@@ -1,0 +1,33 @@
+  Compiling and installing the NDPITools
+  --------------------------------------
+
+1. Prerequisites:
+- an installed version of the make utility, in the PATH
+- an installed C compiler, in the PATH
+- optionally an installed version of the zlib library
+- a UNIX-like shell.
+
+2. Download the source distribution file ndpitools-<VERSION>.tar.bz2 and 
+untar it:
+
+tar xfj ndpitools-<VERSION>.tar.bz2
+
+3. Go into the source directory:
+
+cd ndpitools-<VERSION>
+
+4. Run the build_ndpitools.sh shell script:
+
+sh build_ndpitools.sh
+
+Hopefully this will work for your platform (tested with Mac OS 10.5, 
+10.6, 10.7, Linux Debian and Ubuntu, MinGW).
+
+5. The produced binaries are then in the subdirectory bin of 
+ndpitools-<VERSION>. Feel free to install them in the relevant place; 
+e.g.:
+
+cp bin/* /usr/local/bin
+
+under Linux. This last command should be executed as a superuser (e.g. 
+add sudo in front of the command line).

@@ -5,6 +5,8 @@
 - an installed version of the make utility, in the PATH
 - an installed C compiler, in the PATH
 - optionally an installed version of the zlib library
+- optionally, if compiling with libjpegturbo, an installed version of 
+the cmake utility and an assembler (e.g. nasm or yasm), in the PATH
 - a UNIX-like shell.
 
 2. Download the source distribution file ndpitools-<VERSION>.tar.bz2 and 
@@ -21,7 +23,7 @@ cd ndpitools-<VERSION>
 sh build_ndpitools.sh
 
 Hopefully this will work for your platform (tested with Mac OS 10.5, 
-10.6, 10.7, Linux Debian and Ubuntu, MinGW).
+10.6, 10.7, 10.11, 10.13, 10.15, Linux Debian and Ubuntu, MinGW).
 
 5. The produced binaries are then in the subdirectory bin of 
 ndpitools-<VERSION>. Feel free to install them in the relevant place; 
